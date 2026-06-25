@@ -1,0 +1,10 @@
+{
+  "name": "IELTS Speaking Excellence Coach",
+  "description": "A professional IELTS Speaking preparation and coaching app with AI-powered assessment, structured topics, speech transcription, vocabulary expansions, and reflection worksheets.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

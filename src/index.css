@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-dark-bg: #0A0A0C;
+  --color-dark-card: #111116;
+  --color-dark-border: #1E1E26;
+  --color-dark-highlight: #18181B;
+  --color-dark-panel: #1A1A1F;
+  --color-gold-accent: #F59E0B;
+  --color-muted-zinc: #A1A1AA;
+  --color-muted-gray: #71717A;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0A0A0C;
+  color: #E0E0E6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom dark scrollbar for an elegant feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0C;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E1E26;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #71717A;
+}
+
+/* Fade-in animations for lists */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+
